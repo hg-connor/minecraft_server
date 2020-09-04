@@ -5,18 +5,17 @@ minecraft-server:
 
   environment:
     EULA: "TRUE"
-    OVERRIDE_SERVER_PROPERTIES: true
+    OVERRIDE_SERVER_PROPERTIES: 1
     VIEW_DISTANCE: 10
     MOTD: "Hemme Games"
     SERVER_NAME: "Hemme Games"
     ICON: "https://c-sf.smule.com/s-sf-bck3/sing/performance/cover/c6/de/1fc22791-c098-4822-8ab1-94e5531a870b.png"
-    ALLOW_NETHER: true
     SEED: 691337420
 
   image: itzg/minecraft-server
 
   volumes:
-    /storage/minecraft-live:/data
+    - /storage/minecraft-live:/data
 
   container_name: mc
 

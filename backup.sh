@@ -10,7 +10,7 @@ ARCHIVE_PATH=$BACKUP_DIRECTORY/$ARCHIVE_FILE_NAME
 docker exec mc rcon-cli say Starting backup...
 docker exec mc rcon-cli save-off
 
-tar -cvf $ARCHIVE_PATH -C $SERVER_DIRECTORY . --exclude *.jar
+tar -cvzf $ARCHIVE_PATH -C $SERVER_DIRECTORY . --exclude *.jar
 
 docker exec mc rcon-cli save-on
 docker exec mc rcon-cli say Backup complete!

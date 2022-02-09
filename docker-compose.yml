@@ -12,6 +12,7 @@ minecraft-server:
     ICON: "https://c-sf.smule.com/s-sf-bck3/sing/performance/cover/c6/de/1fc22791-c098-4822-8ab1-94e5531a870b.png"
     SEED: 123450013370069
     MEMORY: "3G"
+    ENABLE_WHITELIST: "TRUE"
 
   image: itzg/minecraft-server
 
